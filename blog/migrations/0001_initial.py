@@ -12,12 +12,13 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Gallery',
+            name='Blog',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('intro', models.CharField(default='描述', max_length=100)),
+                ('title', models.CharField(default='文章标题', max_length=50)),
+                ('date', models.DateField()),
                 ('img', models.ImageField(default='苦力怕.png', upload_to='images/')),
-                ('title', models.CharField(default='标题', max_length=50)),
+                ('text', models.TextField(default='正文')),
             ],
         ),
     ]
