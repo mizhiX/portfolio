@@ -69,7 +69,7 @@
             {% for gallery in gallery.all %}
                 <div class="col-md-4">
                   <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" src="{{ gallery.img.url }}" alt="Card image cap">
+                    <img class="card-img-top" src="{{ gallery.img.url }}" height="180px">
                     <div class="card-body">
                       <p class="card-text">{{ gallery.intro }}</p>
                     </div>
